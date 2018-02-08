@@ -1,7 +1,12 @@
 import {
   Oferta
 } from './shared/oferta.model';
-import { log } from 'util';
+import {
+  log
+} from 'util';
+import {
+  setTimeout
+} from 'timers';
 
 export class OfertasService {
 
@@ -83,9 +88,32 @@ export class OfertasService {
     return this.ofertas;
   }
 
-  public getOfertas2(): Promise<Array<Oferta>> {
+  public getOfertas2(): Promise < Array < Oferta >> {
     return new Promise(((resolve, reject) => {
-      resolve( this.ofertas );
-    }));
+      let deu_certo: boolean = true;
+
+      if (deu_certo) {
+        setTimeout(() => resolve(this.ofertas), 3000);
+      } else {
+        reject({
+          codigo_erro: 404,
+          mensagem_erro: 'Servidor não encontrado'
+        });
+      }
+    })).
+    then(( ofertas: Oferta[]) => {
+      console.log('primeiro then');
+      return ofertas;
+    })
+    .then((ofertas: Oferta[]) => {
+      console.log('segundo then');
+      return new Promise((resolve2, reject2) => {
+        setTimeout(() => { resolve2( ofertas ); }, 3000);
+      });
+    })
+    .then(( ofertas: Oferta[] ) => {
+      console.log('terceiro then executado após 3 segundos');
+      return ofertas;
+    });
   }
 }
