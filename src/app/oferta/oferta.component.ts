@@ -11,7 +11,10 @@ export class OfertaComponent implements OnInit {
   constructor(private route: ActivatedRoute) { }
   
   ngOnInit() {
-    console.log('Id recuperado da rota: ' + this.route.snapshot.params['id']);
+    console.log('Id recuperado da rota: ' + this.route.snapshot.params['id']); 
+    // this.route.params.subscribe((parametro: any) => {
+    //   console.log('O pametro passado foi:' + parametro.id);
+    // });
   }
 
 }
