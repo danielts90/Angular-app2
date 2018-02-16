@@ -13,7 +13,12 @@
                  placeholder="Pesquisar ofertas..."
                  #termoDaPesquisa
                  (keyup)="pesquisa(termoDaPesquisa.value)"/>
+
+                 <div class="list_group" style="position: absolute;">
+                  <li class="list-group-item"  *ngFor="let oferta of ofertas2">{{ oferta.titulo }}</li>
+                </div>
         </div>
+
         <div class="col-md-2">
             <a href="#">
                 <img src="/assets/carrinho.png" />
