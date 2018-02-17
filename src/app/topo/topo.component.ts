@@ -26,8 +26,10 @@ export class TopoComponent implements OnInit {
       .distinctUntilChanged()
       .switchMap((termo: string) => {
         if(termo.trim() === ''){
+          console.log('pesquisando: ', termo);
           return Observable.of<Oferta[]>([]);  
         }
+        console.log('pesquisando: ', termo);
         return this.ofertasService.pesquisaOfertas(termo);
       })
       .catch((err: any) => {
@@ -36,7 +38,11 @@ export class TopoComponent implements OnInit {
   }
 
   public pesquisa(termoDaBusca: string): void {
+    console.log('pesquisa: ', termoDaBusca);
     this.subjectPesquisa.next(termoDaBusca);
   }
 
+  public limpaPesquisa(): void{
+    this.subjectPesquisa.next();
+  }
 }
