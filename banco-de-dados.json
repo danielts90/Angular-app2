@@ -192,6 +192,48 @@
       "complemento": "",
       "formaPagamento": "dinheiro",
       "id": 1
+    },
+    {
+      "endereco": "Rua Dois",
+      "numero": "2",
+      "complemento": "",
+      "formaPagamento": "dinheiro",
+      "id": 2
+    },
+    {
+      "endereco": "Rua Três",
+      "numero": "2",
+      "complemento": "",
+      "formaPagamento": "dinheiro",
+      "id": 3
+    },
+    {
+      "endereco": "Rua Cinco",
+      "numero": "55",
+      "complemento": "",
+      "formaPagamento": "dinheiro",
+      "id": 4
+    },
+    {
+      "endereco": "Rua Seis",
+      "numero": "66",
+      "complemento": "",
+      "formaPagamento": "dinheiro",
+      "id": 5
+    },
+    {
+      "endereco": "Rua Sete",
+      "numero": "77",
+      "complemento": "",
+      "formaPagamento": "dinheiro",
+      "id": 6
+    },
+    {
+      "endereco": "Avenida Sette",
+      "numero": "77",
+      "complemento": "",
+      "formaPagamento": "dinheiro",
+      "id": 7
     }
   ]
 }
