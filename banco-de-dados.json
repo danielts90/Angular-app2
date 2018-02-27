@@ -234,6 +234,20 @@
       "complemento": "",
       "formaPagamento": "dinheiro",
       "id": 7
+    },
+    {
+      "endereco": "Rua Oito",
+      "numero": "8",
+      "complemento": "",
+      "formaPagamento": "dinheiro",
+      "id": 8
+    },
+    {
+      "endereco": "Rua Nove",
+      "numero": "9",
+      "complemento": "",
+      "formaPagamento": "debito",
+      "id": 9
     }
   ]
 }
