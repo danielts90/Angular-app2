@@ -19,6 +19,6 @@ export class OrdemCompraService {
             JSON.stringify(pedido),
             new RequestOptions({ headers: headers})
         )
-        .map((resposta: Response) => resposta.json().id);
+        .map((resposta: any) => resposta.json().id);
     }
 }
