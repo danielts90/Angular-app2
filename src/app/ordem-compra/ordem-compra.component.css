@@ -4,17 +4,17 @@
 }
 
 input.ng-invalid.ng-touched {
-    border: 1px solid red;
+    border: 1px solid #d9534f;
 }
 
 select.ng-invalid.ng-invalid.ng-touched {
-    border: 1px solid red;
+    border: 1px solid #d9534f;
 }
 
 input.ng-valid.ng-touched {
-    border: 1px solid lightgreen;
+    border: 1px solid #5cb85c;
 }
 
 select.ng-valid.ng-touched {
-    border: 1px solid lightgreen;
+    border: 1px solid #5cb85c;
 }
