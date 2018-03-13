@@ -248,6 +248,20 @@
       "complemento": "",
       "formaPagamento": "debito",
       "id": 9
+    },
+    {
+      "endereco": "Rua Chapot Presvot",
+      "numero": "51",
+      "complemento": "Apartamento 301",
+      "formaPagamento": "dinheiro",
+      "id": 10
+    },
+    {
+      "endereco": "Rua Coronel Antonio Pereira da Silva",
+      "numero": "62",
+      "complemento": "Apto 402 Bl01",
+      "formaPagamento": "dinheiro",
+      "id": 11
     }
   ]
 }
