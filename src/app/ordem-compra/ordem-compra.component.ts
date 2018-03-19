@@ -37,23 +37,36 @@ export class OrdemCompraComponent implements OnInit {
       this.formulario.get('numero').markAsTouched();
       this.formulario.get('complemento').markAsTouched();
       this.formulario.get('formaPagamento').markAsTouched();
-      console.log('formulário inválido.');
     } else {
-      let pedido: Pedido = new Pedido(
-        this.formulario.value.endereco,
-        this.formulario.value.numero,
-        this.formulario.value.complemento,
-        this.formulario.value.formaPagemento);
+      if (this.carrinhoService.exibirItens().length === 0) {
+        alert('Seu carrinho está vazio');
+      } else {
+        let pedido: Pedido = new Pedido(
+          this.formulario.value.endereco,
+          this.formulario.value.numero,
+          this.formulario.value.complemento,
+          this.formulario.value.formaPagemento,
+          this.carrinhoService.exibirItens());
+        console.log(pedido);
+        console.log('formulário válido.');
+        this.ordemCompraService.efetivarCompra(pedido)
+         .subscribe((idPedido: number) => {
+           this.idPedidoCompra = idPedido;
+           this.carrinhoService.limparCarrinho();
+          });
 
-      console.log(pedido);
-      console.log('formulário válido.');
-
-      this.ordemCompraService.efetivarCompra(pedido)
-       .subscribe((idPedido: number) => {
-         this.idPedidoCompra = idPedido;
-        });
-
-       console.log(this.idPedidoCompra);
+         console.log(this.idPedidoCompra);
+      }
     }
   }
+  
+
+  public adicionar(item: ItemCarrinho): void {
+    this.carrinhoService.adicionarQuantidade(item);
+  }
+
+  public remover(item: ItemCarrinho): void {
+    this.carrinhoService.removerItem(item);
+  }
+
 }
