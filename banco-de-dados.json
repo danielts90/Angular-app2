@@ -262,6 +262,78 @@
       "complemento": "Apto 402 Bl01",
       "formaPagamento": "dinheiro",
       "id": 11
+    },
+    {
+      "endereco": "Rua Mosca",
+      "numero": "32",
+      "complemento": "casa 1",
+      "id": 12
+    },
+    {
+      "endereco": "Rua Pernilongo",
+      "numero": "30",
+      "complemento": null,
+      "id": 13
+    },
+    {
+      "endereco": "Rua Libelula",
+      "numero": "32",
+      "complemento": null,
+      "id": 14
+    },
+    {
+      "endereco": "Avenida Abelha",
+      "numero": "43",
+      "complemento": null,
+      "id": 15
+    },
+    {
+      "endereco": "Rua Marimbondo",
+      "numero": "11",
+      "complemento": "Cacho",
+      "id": 16
+    },
+    {
+      "endereco": "Rua Fruta que partiu",
+      "numero": "23",
+      "complemento": null,
+      "id": 17
+    },
+    {
+      "endereco": "Rua Fruta que partiu",
+      "numero": "23",
+      "complemento": null,
+      "id": 18
+    },
+    {
+      "endereco": "Rua Fruta que partiu",
+      "numero": "23",
+      "complemento": null,
+      "id": 19
+    },
+    {
+      "endereco": "Rua Gabriel o Pensador",
+      "numero": "23",
+      "complemento": null,
+      "id": 20
+    },
+    {
+      "endereco": "Rua Esquerda",
+      "numero": "32",
+      "complemento": null,
+      "id": 21
+    },
+    {
+      "endereco": "Rua Teste Dois Cliques",
+      "numero": "33",
+      "complemento": null,
+      "id": 22
+    },
+    {
+      "endereco": "Rua Juventino",
+      "numero": "33",
+      "complemento": null,
+      "id": 23
     }
   ]
 }
